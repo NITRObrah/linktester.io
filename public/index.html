@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Link Tester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+  <h1>Site Link Tester</h1>
+
+  <div class="controls">
+    <label for="url">URL to test:</label>
+    <input id="url" type="url" placeholder="https://example.com" />
+
+    <label for="district">District (region):</label>
+    <select id="district">
+      <option value="global">Global (any)</option>
+      <!-- districts will be loaded from districts.json -->
+    </select>
+
+    <label for="blocker">Select blocker:</label>
+    <select id="blocker">
+      <option>None</option>
+      <option>Corporate Proxy</option>
+      <option>ISP Filter</option>
+      <option>Custom Blocklist</option>
+    </select>
+
+    <button id="testBtn">Test Link</button>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>Result</h2>
+    <p><strong>Status:</strong> <span id="status">…</span></p>
+    <p><strong>Blocked?</strong> <span id="blocked">…</span></p>
+    <p><strong>Response time:</strong> <span id="rtt">… ms</span></p>
+    <pre id="headers"></pre>
+    <pre id="body"></pre>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
