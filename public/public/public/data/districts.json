@@ -1,0 +1,10 @@
+{
+  "global": [],
+  "KR": ["naver.com", "daum.net", "line.naver.com", "kakao.com"],
+  "US": ["facebook.com", "twitter.com", "youtube.com"],
+  "GB": ["bbc.co.uk", "theguardian.com"],
+  "CN": ["baidu.com", "qq.com"],
+  "DE": ["spiegel.de", "tagesschau.de"],
+  "FR": ["lefigaro.fr", "allocine.fr"],
+  "JP": ["youtube.com", "nicovideo.jp"]
+}
